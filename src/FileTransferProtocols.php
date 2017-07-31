@@ -2,8 +2,7 @@
 
 // namespace Srs;    // caused errors and may not be necessary so commented out for now
 
-require_once __DIR__.'/NoMagicFunctions.php';
-require_once __DIR__.'/FileTransferProtocol.php';
+require_once __DIR__.'/../autoLoader.php';
 
 /**
  * This is a factory for file transfer protocol commands.
