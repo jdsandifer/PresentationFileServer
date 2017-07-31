@@ -37,6 +37,6 @@ to keep some of the inner workings of the system private. I've noted these areas
 
 ### Things To See
 - A Strategy-like pattern in `FileTransferProtocol.php` (the interface), `FirstProtocol.php`, and `SecondProtocol.php` (I changed the names of the last two files)
-- A factory method in `FileTransferProtocols.php`
+- A factory method in `FileTransferProtocols.php` - note the comment to explain the "magic" of how it works to others on the team who aren't yet familiar with the pattern
 - The command pattern in `FilePushToClientFromServer.php` and `FilePullFromClientToServer.php` (the objects encapsulate commands preparing the way to easily implement undo or a command queue due to their consistent interface with the `run()` method)
 - Standard method and class headers to work with documentation extractors and IDE's. We don't use either of those, though, so it's primarily a habit I'm training myself to follow. (That also explains why I haven't perfectly implemented it everywhere...)
