@@ -1,4 +1,4 @@
-## presentation-file-server
+## Presentation File Server
 In my work as a part-time software developer at the Oregon Convention Center, 
 I have been contributing to the development of a file server and distibution system 
 for conventions to use to facilitate easy presentation file management.
