@@ -1,6 +1,6 @@
 ## Presentation File Server
 In my work as a part-time software developer at the Oregon Convention Center, 
-I have been contributing to the development of a file server and distibution system 
+I contributed to the development of a file server and distibution system 
 for conventions to use to facilitate easy presentation file management.
 
 The speaker uploads their presentation files, reviews and updates them as they desire, 
@@ -12,18 +12,18 @@ This is especially useful for clients with flash talks (or any presentation less
 ### Background
 The team developing the product is comprised of two people: the product creator and myself. 
 He came up with the idea, got the basic implementation working, and then brought me on 
-a while later after I expressed interest in helping with the project.
+after I expressed interest in helping with the project.
 
 ### My Contributions
-Aside from writing code, I've contributed to the project in three main ways:
+Aside from writing code in many areas, I've contributed to the project in three main ways:
 
-1) Championing **readable, maintainable, reliable code.** I've been instrumental in 
+1) Championing **readable, maintainable, reliable code.** I was instrumental in 
 raising the level of code quality significantly.
 
 2) Introducing best practices, especially **Object-Oriented Programming**, to the team.
 
 3) Adding **Mac functionality**. As a developer who's familiar with multiple OS's, 
-I had the most experience with Mac's and am pioneering the addition of Mac support 
+I had the most experience with Mac's and pioneered the addition of Mac support 
 to the system.
 
 ### Code
@@ -33,7 +33,7 @@ self-documenting code, readability, having a consistent code style, and building
 changes (modularity).
 
 Please note that I've removed a few lines of core functionality and changed some file names 
-to keep some of the inner workings of the system private. I've noted these areas with obvious comments.
+to keep some of the inner workings of the system secret. I've noted these areas with obvious comments.
 
 ### Things To See
 - A Strategy-like pattern in `FileTransferProtocol.php` (the interface), `FirstProtocol.php`, and `SecondProtocol.php` (I changed the names of the last two files)
