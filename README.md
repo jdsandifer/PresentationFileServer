@@ -36,7 +36,13 @@ Please note that I've removed a few lines of core functionality and changed some
 to keep some of the inner workings of the system secret. I've noted these areas with obvious comments.
 
 ### Things To See
-- A Strategy-like pattern in `FileTransferProtocol.php` (the interface), `FirstProtocol.php`, and `SecondProtocol.php` (I changed the names of the last two files)
-- A factory method in `FileTransferProtocols.php` - note the comment to explain the "magic" of how it works to others on the team who aren't yet familiar with the pattern
-- The command pattern in `FilePushToClientFromServer.php` and `FilePullFromClientToServer.php` (the objects encapsulate commands preparing the way to easily implement undo or a command queue due to their consistent interface with the `run()` method)
-- Standard method and class headers to work with documentation extractors and IDE's. We don't use either of those, though, so it's primarily a habit I'm training myself to follow. (That also explains why I haven't perfectly implemented it everywhere...)
+- A Strategy-like pattern in 
+[`FileTransferProtocol.php`](https://github.com/jdsandifer/PresentationFileServer/blob/master/src/FileTransferProtocol.php) (the interface), 
+[`FirstProtocol.php`](https://github.com/jdsandifer/PresentationFileServer/blob/master/src/FirstProtocol.php), 
+and [`SecondProtocol.php`](https://github.com/jdsandifer/PresentationFileServer/blob/master/src/SecondProtocol.php) (I changed the names of the last two files)
+- A factory method in [`FileTransferProtocols.php`](https://github.com/jdsandifer/PresentationFileServer/blob/master/src/FileTransferProtocols.php) 
+(Note the comment to explain the "magic" of how it works to others on the team who aren't yet familiar with the pattern.)
+- The command pattern in [`FilePushToClientFromServer.php`](https://github.com/jdsandifer/PresentationFileServer/blob/master/src/FilePushToClientFromServer.php) 
+and [`FilePullFromClientToServer.php`](https://github.com/jdsandifer/PresentationFileServer/blob/master/src/FilePullFromClientToServer.php) 
+(the objects encapsulate commands preparing the way to easily implement undo or a command queue due to their consistent interface with the `run()` method)
+- Standard method and class headers to work with documentation extractors and IDE's. We didn't use either of those for this project so it was primarily a habit I was training myself to follow. (That also explains why I haven't perfectly implemented it everywhere.)
